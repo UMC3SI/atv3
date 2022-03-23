@@ -1,0 +1,4 @@
+1- Não é permitido alterar atributos Privates fora do escopo da classe
+2- com a alteração do atributo para publoc se tem a permissão de alteração fora do escopo da classe
+3- O método não poderá ser chamado fora da classe
+
