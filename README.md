@@ -13,8 +13,11 @@
 ## Após essa implementação responda:
 
 - Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+-- 1) Não aconteceu nada, pois o atributo massa não estava visível.
 - Na classe Corpo_Humano altere a linha private float Massa para public float Massa; Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+-- 2)Agora o atributo massa esta visível, sendo possível alterar ele diretamente.
 - Na classe Corpo_Humano altere a linha public setVolume (float volume) para private setVolume (float volume).Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+-- 3)O método setVolume() passou a ser invisível para as outras classe, exceto onde foi criado
 
 
 Colocar essa informação no Readme do Git ou Em comentários de código na classe main
