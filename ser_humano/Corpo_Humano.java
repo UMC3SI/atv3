@@ -4,43 +4,43 @@ package ser_humano;
 
 public class Corpo_Humano {
     
-    public float massa;
-    private float densidade;
-    private float volume;
-    private float altura;
+    private double massa;
+    private double densidade;
+    private double volume;
+    private double altura;
     
-    public Corpo_Humano(float massa, float volume){
+    public Corpo_Humano(double massa, double volume){
         this.massa = massa;
         this.volume = volume;
         densidade = massa / volume;
     }
     
-    public float GetMassa(){
+    public double getMassa(){
         return massa;
     }
-    public float GetVolume(){
+    public double getVolume(){
         return volume;
     }
-    public float GetDensidade(){
+    public double getDensidade(){
         return densidade;
     }
-    public float GetAltura(){
+    public double getAltura(){
         return altura;
     }
     
-    public void SetMassa(float massa){
+    public void setMassa(double massa){
         this.massa = massa;
         densidade = massa / volume;
     }
     
-    public void SetVolume(float volume){
+    public void setVolume(double volume){
         this.volume = volume;
         densidade = massa / volume;
     }
-    public void SetAltura(float altura){
+    public void setAltura(double altura){
         this.altura = altura;
     }
-    public float calcularIMC(){
-        return massa/volume;
+    public double calcularIMC(){
+        return massa/(altura * altura);
     }
 }
